@@ -38,7 +38,7 @@ const getLangData = async ()=>{
 		return
 	}
 	locale = [];
-	
+
 	const langPath = path.resolve(vscode.workspace.rootPath,configData.defaultPath);
 	watchFileChange(langPath);
 	const data = await getFileData(langPath)
@@ -55,17 +55,12 @@ const getLangData = async ()=>{
  * @param {vscode.ExtensionContext} context
  */
 exports.activate = function(context) {
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "formatsjs-tool-vscode" is now active!');
+	console.log('Congratulations, your extension "format-tool-vscode" is now active!');
 	const triggers = [' '];
 
 	getLangData();
 	const completionProvider = vscode.languages.registerCompletionItemProvider(LANGUAGES, {
 		async provideCompletionItems(document, position, token, context) {
-			// const completionItem= {
-			// 	label: 'Hello VsCode',
-			// };
 			return locale;
 		}
 	}, ...triggers);

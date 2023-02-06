@@ -1,9 +1,6 @@
 # Change Log
 
-All notable changes to the "formatsjs-tool-vscode" extension will be documented in this file.
+## [0.1.0] - 2023-02-06
+### Added
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- 输入提示语言文件的key和value

@@ -2,7 +2,7 @@
   "name": "formatjs-tool-vscode",
   "displayName": "formatjs-tool-vscode",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -37,5 +37,9 @@
     "mocha": "^10.1.0",
     "typescript": "^4.9.3",
     "@vscode/test-electron": "^2.2.0"
+  },
+  "repository": "https://github.com/zhushibo/formatjs-tool-vscode",
+  "volta": {
+    "node": "14.21.2"
   }
 }

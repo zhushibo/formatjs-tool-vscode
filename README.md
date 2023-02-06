@@ -1,65 +1,36 @@
 # formatjs-tool-vscode README
-
-This is the README for your extension "formatjs-tool-vscode". 
+一个能够为多语言提供输入提示的插件
 
 ## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+配置默认语言路径之后，输入相关的key或者value值都会有提示。
+![示例](https://github.com/zhushibo/formatjs-tool-vscode/blob/main/example/prompt.gif)
+通过回车可自动带出 `formatMessage({id: "xxx"})`
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+可新建.formatool.json 文件配置 defaultPath 来指定默认语言位置。
 
-For example:
+比如我的设计稿中使用的是英文 （语言文件目前只支持json格式）
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+`.formatool.json` 配置
+```
+{
+    "defaultPath":"src/locale/en.json" 
+}
+```
 
 ## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+[github](https://github.com/zhushibo/formatjs-tool-vscode/issues)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+基本语言提示
 
-### 1.0.1
+## Todo
 
-Fixed issue #.
+- [ ] 通过命令转化表格为json语言文件，并按照规则生成key
+- [ ] 自定义生成模版内容
+- [ ] 点击跳转对应语言文件
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
