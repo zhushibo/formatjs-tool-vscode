@@ -2,7 +2,7 @@
   "name": "formatjs-tool-vscode",
   "displayName": "formatjs-tool-vscode",
   "description": "formatjs语言提示插件",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "wonderzhu",
   "icon": "icon.png",
   "engines": {
