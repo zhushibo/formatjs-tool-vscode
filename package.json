@@ -3,7 +3,7 @@
   "displayName": "formatjs-tool-vscode",
   "description": "formatjs语言提示插件",
   "version": "0.1.0",
-  "publisher": "wonder",
+  "publisher": "wonderzhu",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"
@@ -13,7 +13,9 @@
   ],
   "activationEvents": [
     "onLanguage:javascript",
-    "onLanguage:typescript"
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
   ],
   "main": "./extension.js",
   "contributes": {

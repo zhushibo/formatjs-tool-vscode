@@ -32,6 +32,10 @@ const watchFileChange = (path)=>{
 
 const getLangData = async ()=>{
 	const configPath = path.resolve(vscode.workspace.rootPath,CONFIG_PATH)
+	debugger
+	if(!fs.existsSync(configPath)){
+		return
+	}
 	const configData = await getFileData(configPath);
 
 	if(!configData.defaultPath){
@@ -57,7 +61,7 @@ const getLangData = async ()=>{
 exports.activate = function(context) {
 	console.log('Congratulations, your extension "format-tool-vscode" is now active!');
 	const triggers = [' '];
-
+	
 	getLangData();
 	const completionProvider = vscode.languages.registerCompletionItemProvider(LANGUAGES, {
 		async provideCompletionItems(document, position, token, context) {

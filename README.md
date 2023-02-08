@@ -3,7 +3,7 @@
 
 ## Features
 配置默认语言路径之后，输入相关的key或者value值都会有提示。
-![示例](https://github.com/zhushibo/formatjs-tool-vscode/blob/main/example/prompt.gif)
+![示例](https://raw.githubusercontent.com/zhushibo/formatjs-tool-vscode/main/example/prompt.gif)
 通过回车可自动带出 `formatMessage({id: "xxx"})`
 
 ## Extension Settings
