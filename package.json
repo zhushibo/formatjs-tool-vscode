@@ -21,7 +21,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "formatsjs-tool-vscode.helloWorld",
+        "command": "formatjs-tool-vscode.helloWorld",
         "title": "Hello World"
       }
     ]

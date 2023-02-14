@@ -32,7 +32,6 @@ const watchFileChange = (path)=>{
 
 const getLangData = async ()=>{
 	const configPath = path.resolve(vscode.workspace.rootPath,CONFIG_PATH)
-	debugger
 	if(!fs.existsSync(configPath)){
 		return
 	}
